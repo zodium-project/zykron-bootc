@@ -1,0 +1,29 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+          - xdg-utils
+          - xdg-user-dirs
+          - xdg-desktop-portal
+          - xdg-desktop-portal-kde
+          - plasma-nm
+          - plasma-pa
+          - plasma-workspace
+          - plasma-desktop
+          - plasma-integration
+          - plasma-activities
+          - kwayland-integration
+          - kunifiedpush
+          - kde-settings-plasma
+          - bluedevil
+          - powerdevil
+          - ffmpegthumbs
+          - kscreen
+          - kscreenlocker
+        # - plasma-setup
+          - plasma-login-manager
+          - plasma-keyboard

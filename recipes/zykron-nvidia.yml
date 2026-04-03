@@ -1,0 +1,43 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# image will be published to ghcr.io/<user>/<name>
+
+####################
+#### Image Info ####
+####################
+name: zykron-nvidia
+description: Zykron Linux image for NVIDIA GPUS.
+base-image: ghcr.io/zodium-project/zcore-nvidia
+image-version: latest
+platforms:
+  - linux/amd64
+#################
+#### MODULES ####
+#################
+modules:
+## Import Modules/Scripts ##
+  - from-file: zrun/tweak/pre-setup-tweaks.yml
+  - from-file: zrun/install/kde-plasma.yml
+  - from-file: zrun/install/kde-plasma-addons.yml
+  - from-file: zrun/install/kde-plasma-extras.yml
+  - from-file: zrun/install/kde-plasma-optionals.yml
+  - from-file: zrun/install/apps.yml
+  - from-file: zrun/install/settings-tweaks.yml
+  - from-file: zrun/install/language-input.yml
+  - from-file: zrun/tweak/post-setup-cleanup.yml
+#############################
+### End of System Modules ###
+#############################
+## OS-release Module ##
+  - type: os-release
+    properties:
+      NAME: Zykron Linux
+      PRETTY_NAME: Zykron Linux (NVIDIA) by zodium project
+      DEFAULT_HOSTNAME: zykron
+## initramfs module ##
+  - type: initramfs
+## Signing Module ##
+  - type: signing
+###################
+### END of File ###
+###################
