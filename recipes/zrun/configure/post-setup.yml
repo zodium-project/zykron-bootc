@@ -5,7 +5,6 @@ modules:
 
  - type: script
    snippets:
-      - dnf upgrade --refresh --setopt=install_weak_deps=False -y
       - dnf config-manager setopt fedora-multimedia.enabled=0
       - rm -f /etc/yum.repos.d/fedora-multimedia.repo
       - "dnf5 autoremove -y"
