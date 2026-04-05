@@ -9,7 +9,7 @@ modules:
           - plasma-milou
           - kio-gdrive
           - kio-fuse
-          - plasma-browser-integration
+        # - plasma-browser-integration
           - plasma-wayland-protocols
           - plasma-thunderbolt
           - kde-gtk-config
