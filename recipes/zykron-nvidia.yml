@@ -24,7 +24,7 @@ modules:
   - from-file: zrun/install/plasma-apps.yml
   - from-file: zrun/install/plasma-input.yml
   - from-file: zrun/configure/zykron-settings.yml
-  - from-file: zrun/tweak/post-setup.yml
+  - from-file: zrun/configure/post-setup.yml
 #############################
 ### End of System Modules ###
 #############################
