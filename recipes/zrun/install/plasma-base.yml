@@ -17,6 +17,7 @@ modules:
           - plasma-desktop
           - plasma-integration
           - plasma-activities
+          - plasma-lookandfeel-fedora
           - kwayland-integration
           - kunifiedpush
           - kde-settings-plasma

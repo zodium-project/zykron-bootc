@@ -14,6 +14,7 @@ modules:
           - ark
           - spectacle
           - ghostty
+          - helium-drm
           - kde-partitionmanager
           - kde-connect
           - plasma-systemsettings
