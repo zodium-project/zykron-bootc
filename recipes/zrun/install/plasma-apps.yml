@@ -28,5 +28,6 @@ modules:
 
   - type: script
     snippets:
-        - "dnf -y copr disable scottames/ghostty"
-        - "rm -rf /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:scottames:ghostty.repo"
+        - |
+          dnf -y copr disable scottames/ghostty 
+          rm -rf /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:scottames:ghostty.repo

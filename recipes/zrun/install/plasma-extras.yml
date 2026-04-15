@@ -24,5 +24,6 @@ modules:
 
   - type: script
     snippets:
-        - "dnf -y copr disable matinlotfali/KDE-Rounded-Corners"
-        - "rm -rf /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:matinlotfali:KDE-Rounded-Corners.repo"
+        - |
+          dnf -y copr disable matinlotfali/KDE-Rounded-Corners
+          rm -rf /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:matinlotfali:KDE-Rounded-Corners.repo

@@ -12,6 +12,6 @@ modules:
 
  - type: script
    snippets:
-    # - "systemctl enable plasma-setup.service"
-      - "systemctl enable plasmalogin.service"
-      - "systemctl enable switcheroo-control.service"
+      - |
+        systemctl enable plasmalogin.service
+        systemctl enable switcheroo-control.service
