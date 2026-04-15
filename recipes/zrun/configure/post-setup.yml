@@ -9,6 +9,6 @@ modules:
         dnf config-manager setopt zodium-pkgs.enabled=0
         rm -f /etc/yum.repos.d/fedora-multimedia.repo
         rm -f /etc/yum.repos.d/zodium-pkgs.repo
-        "dnf5 autoremove -y"
-        "dnf5 clean all"
-        "dnf5 clean packages"
+        dnf5 autoremove -y
+        dnf5 clean all
+        dnf5 clean packages
